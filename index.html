@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Custom CSS -->
+    <link href="site.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+        window.OneSignal = window.OneSignal || [];
+        OneSignal.push(function() {
+            OneSignal.init({
+            appId: "60dacef4-e825-437d-b7d6-f66b714761ca",
+            });
+        });
+    </script>
+    <title>Stitch of Wisdom</title>
+</head>
+
+<body>
+  <div class= "wrapper">
+    <div class="head-nav">
+        <a href="index.html"><img class="head-img" src="images/stitch-black.png"></a>
+        <div class="banner">
+        <a class="nav-links" href="designs.html">Designs</a>
+        <a class="nav-links" href="how-to.html">How-To</a>
+        <a class="nav-links" href="about.html">About</a>
+        <a class="nav-img-links" href="https://www.instagram.com/stitchofwisdom/" target="_blank"><img alt="instagram" src="images/insta.png" width="30"></a>
+        </div>
+    </div>
+        
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <img class="slide-img" src="images/braver.jpg">
+      </div>
+
+      <div class="mySlides fade">
+        <img class="slide-img" src="images/tree.jpg">
+      </div>
+
+      <div class="mySlides fade">
+        <img class="slide-img" src="images/wear-mask.jpg">
+      </div>
+
+        <div class="scroll-buttons">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <div class="home-blurb">
+        <h3 style="text-align:center">Flex your patience, persistence, and phalanges as you meditate on these mantras and create something pretty.</h3>
+        <p>Tiny, simple movements repeated over long spans of time--the process and principles of stitching are meditative in nature. The tools are simple and few, with persistence and consistency superseding perfection.</p>
+        <p>If you're new to stitching, congratulations on your new, accessible, and fulfilling hobby! Please enjoy these easy patterns and check out the tips & tricks <a href="how-to.html">here</a> for a quick-start guide.</p>
+    </div>
+    <div class="push"></div>
+  </div>
+
+  <footer>
+      <div>
+          <p>&#169; 2020, stitchofwisdom.com</p>
+      </div>
+  </footer>
+
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "inline-block";
+    dots[slideIndex-1].className += " active";
+  }
+
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
+  }
+  </script>
+</body>
+</html>

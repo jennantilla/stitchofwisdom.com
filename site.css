@@ -1,0 +1,223 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Tenor Sans", sans-serif;
+  color: #575757;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  color: #575757;
+}
+
+a:visited {
+  color: #575757;
+}
+
+.design-thumbnails {
+  display: inline-block;
+}
+
+.thumbnail-container {
+  margin: 10px;
+  text-align: center;
+}
+
+#thumbnail-image {
+  height: 250px;
+  margin: 10px;
+}
+
+.head-nav {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.head-img {
+  display: block;
+  opacity: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+.banner {
+  text-align: center;
+  background-color: #fca726;
+  padding: 10px;
+  height: 50px;
+}
+
+.color-heading {
+  color: #fca726;
+}
+
+.home-blurb {
+  margin-top: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.page-body {
+  margin-right: 30px;
+  margin-left: 30px;
+  padding: 5px;
+}
+
+.nav-links {
+  font-size: 20px;
+  font-weight: 900;
+  padding-right: 30px;
+  text-decoration: none;
+}
+
+.nav-links:hover {
+  text-decoration: underline;
+}
+
+.nav-img-links {
+  float: right;
+}
+
+#stitch-demo {
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.stitch-page-photo {
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+#intro {
+  width: 30%;
+  float: left;
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 25%;
+}
+
+textarea {
+  width: 50%;
+  height: 150px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.slide-img {
+  max-width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 80px;
+  color: gray;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.pattern-link {
+  font-size: 20px;
+  padding: 450px 1100px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.wrapper {
+  min-height: 100%;
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -50px;
+}
+
+.footer,
+.push {
+  height: 50px;
+}
+
+footer {
+  color: black;
+  margin-right: 10px;
+  padding: 10px;
+  float: right;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
